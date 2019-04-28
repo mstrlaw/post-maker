@@ -5,12 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    pngSrc: ''
   },
   mutations: {
-
+    saveResult (state, value) {
+      state.pngSrc = value
+    }
   },
-  actions: {
-
+  getters: {
+    pngSrc (state) {
+      return state.pngSrc
+    }
   }
 })
