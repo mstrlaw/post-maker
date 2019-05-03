@@ -35,6 +35,8 @@
         id="the-file-input"
         type="file"
         class="input is-small"
+        accept="video/*"
+        capture="camcorder"
         @change="processImage"
       >
       <a
